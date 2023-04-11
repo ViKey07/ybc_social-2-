@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="../../static/css/register.css">
+        <title>YBC JOIN US</title>
+    </head>
+    <body>
+        <nav class="login-nav">
+
+            <a class="nav-logo-a" href="#"><img class="nav-logo" src="{% static 'img/Asset 212.png'%}" alt="YBC-logo"></a>
+
+        </nav>
+    <section class="register_page">
+        <!-- <img class="lock" src="{% static 'img/lock.png'%}" alt=""> -->
+        
+        <!-- <div class="sec2">
+        <img src="{% static 'img/logo.png'%}" alt=""> -->
+        <div class="sec">
+        <p class="hd"> <span> <br> Take the biggest advantage of being a student or alumni </span></p>
+    
+    
+    <form method="post">
+       
+        
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="buttons">
+        <button class="signup-sec-btn" type="submit">Sign up <br></button> <br>
+        <div class="sign_in">
+            <p class="signin_text">Already have an account.?</p> <a href="{% url 'login' %}">Sign-In</a> <br>
+            </div>
+        </div>
+
+    </form>
+    </section>
+</body>
+</html>

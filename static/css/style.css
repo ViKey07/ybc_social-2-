@@ -1,0 +1,11 @@
+html, body {
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: #b0f7ff;
+}
+
+/* @media screen and (min-width: 768px) {
+    .btn {
+        display: none;
+    }
+  } */

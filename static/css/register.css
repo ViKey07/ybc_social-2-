@@ -1,0 +1,80 @@
+.login-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5em;
+    background-color: transparent;
+}
+
+.nav-logo {
+    width: 150px;
+}
+
+.sec {
+    text-align: center;
+}
+
+label {
+    display: none;
+}
+
+ul {
+    display: none;
+}
+
+li {
+    display: none;
+}
+
+span.helptext {
+    display: none;
+}
+
+p.hd {
+    font-family: 'Poppins', sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    color: blue;
+}
+
+input {
+    padding: 1em;
+    border-radius: 50px;
+    border: 2px solid blue;
+    background: transparent;
+    width: 35%;
+}
+
+input:focus{
+    padding: 1em;
+    border-radius: 50px;
+    border: 0.2em solid blue;
+    background: transparent;
+    width: 35%;
+}
+
+.signup-sec-btn {
+    padding: 0.4em 1.7em;
+    border-radius: 50px;
+    border: 2px solid blue;
+    background-color: #b0f7ff;
+    color: blue;
+    cursor: pointer;
+    margin-right: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: 700;
+}
+
+.signup-sec-btn:hover {
+    padding: 0.4em 1.7em;
+    border-radius: 50px;
+    border: 2px solid #b0f7ff;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    margin-right: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    font-weight: 700;
+}

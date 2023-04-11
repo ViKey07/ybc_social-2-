@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="../../static/css/login.css">
+    <title>YBC LOGIN</title>
+</head>
+<body>
+    <!-- <nav class="login-nav">
+
+        <a class="nav-logo-a" href="#"><img class="nav-logo" src="{% static 'img/Asset 212.png'%}" alt="YBC-logo"></a>
+
+        <div class="c-nav" id="t-nav">
+            <form class="nav-form" method="post"> {% csrf_token %}
+                <div class="btn">
+                    <Button class="signin-btn" type="submit">LOGIN</Button>
+                    <button class="logout-btn"><a class="logout-btn-link" href="{% url 'register' %}">JOIN NOW</a></button>
+                </div>
+            </form>   
+        </div>
+    </nav> -->
+
+
+    <nav class="login-nav">
+        <a class="nav-logo-a" href="#">
+          <img class="nav-logo" src="{% static 'img/Asset 212.png'%}" alt="YBC-logo">
+        </a>
+      
+        <div class="c-nav" id="t-nav">
+          <form class="nav-form" method="post"> {% csrf_token %}
+            <div class="btn">
+              <button class="hamburger-btn" type="button">
+                <span ></span>
+                <span ></span>
+                <span ></span>
+              </button>
+            </div>
+          </form>   
+        </div>
+      
+        <!-- Dropdown container -->
+        <div class="dropdown" id="dropdown">
+          <button class="signin-btn" type="submit">LOGIN</button>
+          <button class="logout-btn"><a class="logout-btn-link" href="{% url 'register' %}">JOIN NOW</a></button>
+        </div>
+      
+      </nav>
+      
+    
+    <section class="signin-sec">
+        
+        <img class="lock" src="{% static 'img/Asset 412.png'%}" alt="">
+        
+        <div class="sec2">
+        
+        <div class="sec">
+            <p class="hd"> <span> Access world's first community <br> for students and alumni. </span></p>
+                <div class="input">
+                    <form method="post"> {% csrf_token %}
+                        <p class="inp"> {{ form.as_p }} </p>
+                </div>
+                <br>
+
+                        <p class="signup_text">Reset pasword</p>
+
+                <div class="btn">
+                    <Button class="signin-sec-btn" type="submit">LOGIN</Button>
+                    <Button class="signup-sec-btn"><a class="signup-sec-btn-link" href="{% url 'register' %}">SIGNUP</a></Button>
+                </div>
+                    {% csrf_token %}
+                    </form>
+            </div>
+        </div>
+    
+    </section>
+
+    <script>
+
+        // Get the hamburger button and the dropdown container
+        const hamburgerBtn = document.querySelector('.hamburger-btn');
+        const dropdown = document.querySelector('.dropdown');
+
+        // Add a click event listener to the hamburger button
+        hamburgerBtn.addEventListener('click', () => {
+        // Toggle the active class on the dropdown container
+        dropdown.classList.toggle('dropdown-active');
+        });
+
+
+    </script>
+    
+</body>
+</html>
+  
