@@ -341,6 +341,10 @@ input:focus {
     color: white;
 }
 
+.hamburger-btn {
+    display: none;
+}
+
 /* Responsive styles */
 
 /* Small screens */
